@@ -1,7 +1,11 @@
 library(shiny)
 
 ui <- fluidPage(
-  sliderInput(inputId = "num", label = "Choose a number", min = 1, max = 100, value = 50),
+  sliderInput(inputId = "num",
+              label = "Choose a number",
+              min = 1,
+              max = 100,
+              value = 50),
   plotOutput("hist")
 )
 
